@@ -4,7 +4,7 @@
   "description": "This is a repository I created for studying React Server Components (RSC).\r I wrote code by mixing the following two repositories.",
   "main": "index.js",
   "scripts": {
-    "dev": "node server/index.js",
+    "dev": "node --conditions=react-server server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
