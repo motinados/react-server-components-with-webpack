@@ -26,6 +26,17 @@ app.get("/", async function (req, res) {
   res.send(html);
 });
 
+app.get("/rsc/*", async function (req, res) {
+  const manifest = readFileSync(
+    path.resolve(__dirname, "../dist/react-client-manifest.json"),
+    "utf8",
+  );
+  const moduleMap = JSON.parse(manifest);
+  const Page = React.createElement(ServerRoot);
+  const { pipe } = renderToPipeableStream(Page, moduleMap);
+  pipe(res);
+});
+
 app.use(express.static(path.resolve(__dirname, "../dist")));
 
 app.listen(port, async () => {
