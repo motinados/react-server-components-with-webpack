@@ -11,16 +11,5 @@ export default function ServerRoot({ search }) {
 
 async function Albums({ search }) {
   const albums = await getAll();
-  return (
-    <div>
-      <ul>
-        {albums.map((album) => (
-          <li key={album.id}>
-            <div>artist: {album.artist}</div>
-            <div>title: {album.title}</div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+  return <SearchableAlbumList albums={albums} search={search} />;
 }
