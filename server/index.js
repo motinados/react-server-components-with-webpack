@@ -30,12 +30,14 @@ app.get("/", async function (req, res) {
 });
 
 app.get("/rsc/*", async function (req, res) {
+  const search = req.query.search || "";
+  const params = { search };
   const manifest = readFileSync(
     path.resolve(__dirname, "../dist/react-client-manifest.json"),
     "utf8",
   );
   const moduleMap = JSON.parse(manifest);
-  const Page = React.createElement(ServerRoot);
+  const Page = React.createElement(ServerRoot, params);
   const { pipe } = renderToPipeableStream(Page, moduleMap);
   pipe(res);
 });
