@@ -1,15 +1,15 @@
 import { getAll } from "./db/get";
 
-export default function ServerRoot() {
+export default function ServerRoot({ search }) {
   return (
     <div>
       <h1>Server Root</h1>
-      <Albums />
+      <Albums search={search} />
     </div>
   );
 }
 
-async function Albums() {
+async function Albums({ search }) {
   const albums = await getAll();
   return (
     <div>
