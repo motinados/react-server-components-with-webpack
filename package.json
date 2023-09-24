@@ -4,6 +4,7 @@
   "description": "This is a repository I created for studying React Server Components (RSC).\r I wrote code by mixing the following two repositories.",
   "main": "index.js",
   "scripts": {
+    "dev": "node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,7 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/register": "^7.21.0",
     "babel-loader": "^8.3.0",
+    "express": "^4.18.2",
     "html-webpack-plugin": "^5.5.3",
     "react": "^18.3.0-next-1308e49a6-20230330",
     "react-dom": "^18.3.0-next-1308e49a6-20230330",
@@ -32,5 +34,15 @@
   },
   "devDependencies": {
     "prettier": "^3.0.3"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ]
   }
 }
