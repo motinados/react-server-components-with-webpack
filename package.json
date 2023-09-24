@@ -17,6 +17,19 @@
     "url": "https://github.com/motinados/react-server-components-with-webpack/issues"
   },
   "homepage": "https://github.com/motinados/react-server-components-with-webpack#readme",
+  "dependencies": {
+    "@babel/core": "7.21.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.21.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/register": "^7.21.0",
+    "babel-loader": "^8.3.0",
+    "html-webpack-plugin": "^5.5.3",
+    "react": "^18.3.0-next-1308e49a6-20230330",
+    "react-dom": "^18.3.0-next-1308e49a6-20230330",
+    "react-server-dom-webpack": "^18.3.0-next-1308e49a6-20230330",
+    "rimraf": "^5.0.1",
+    "webpack": "^5.76.2"
+  },
   "devDependencies": {
     "prettier": "^3.0.3"
   }
