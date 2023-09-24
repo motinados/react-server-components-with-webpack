@@ -1,0 +1,23 @@
+{
+  "name": "react-server-components-with-webpack",
+  "version": "1.0.0",
+  "description": "This is a repository I created for studying React Server Components (RSC).\r I wrote code by mixing the following two repositories.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motinados/react-server-components-with-webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motinados/react-server-components-with-webpack/issues"
+  },
+  "homepage": "https://github.com/motinados/react-server-components-with-webpack#readme",
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
+}
