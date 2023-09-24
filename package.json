@@ -26,9 +26,9 @@
     "babel-loader": "^8.3.0",
     "express": "^4.18.2",
     "html-webpack-plugin": "^5.5.3",
-    "react": "^18.3.0-next-1308e49a6-20230330",
-    "react-dom": "^18.3.0-next-1308e49a6-20230330",
-    "react-server-dom-webpack": "^18.3.0-next-1308e49a6-20230330",
+    "react": "18.3.0-next-1308e49a6-20230330",
+    "react-dom": "18.3.0-next-1308e49a6-20230330",
+    "react-server-dom-webpack": "18.3.0-next-1308e49a6-20230330",
     "rimraf": "^5.0.1",
     "webpack": "^5.76.2"
   },
